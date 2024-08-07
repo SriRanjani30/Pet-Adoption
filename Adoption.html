@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .featured-pets, .adoption-process, .testimonials, .contact {
+            margin: 20px 0;
+        }
+        .pet {
+            display: inline-block;
+            width: 30%;
+            margin: 1.66%;
+            box-shadow: 0 0 10px #aaa;
+        }
+        .pet img {
+            width: 100%;
+        }
+        .pet h3 {
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pet Adoption Center</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured Pets</a></li>
+                <li><a href="#process">Adoption Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="featured" class="featured-pets">
+            <h2>Featured Pets</h2>
+            <div class="pet">
+                <img src="pet1.jpg" alt="Pet 1">
+                <h3>Pet Name 1</h3>
+                <p>Breed: Breed 1</p>
+                <p>Age: 2 years</p>
+            </div>
+            <div class="pet">
+                <img src="pet2.jpg" alt="Pet 2">
+                <h3>Pet Name 2</h3>
+                <p>Breed: Breed 2</p>
+                <p>Age: 3 years</p>
+            </div>
+            <div class="pet">
+                <img src="pet3.jpg" alt="Pet 3">
+                <h3>Pet Name 3</h3>
+                <p>Breed: Breed 3</p>
+                <p>Age: 1 year</p>
+            </div>
+        </section>
+        <section id="process" class="adoption-process">
+            <h2>Adoption Process</h2>
+            <p>1. Browse our pets.</p>
+            <p>2. Contact us for more information.</p>
+            <p>3. Meet the pet.</p>
+            <p>4. Complete the adoption application.</p>
+            <p>5. Bring your new pet home!</p>
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <p>"Adopting from Pet Adoption Center was the best decision we made. Our new furry friend has brought so much joy to our lives!" - Happy Pet Owner</p>
+            <p>"The staff at Pet Adoption Center were incredibly helpful and made the adoption process smooth and easy." - Satisfied Adopter</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
